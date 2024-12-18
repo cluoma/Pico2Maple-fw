@@ -8,6 +8,15 @@ Pico2Maple is a Dreamcast Maple bus emulator for the RP2350. The goal of this pr
 
 Currently, it is possible to use several USB controllers, dongles, mice, and keyboards. Pico2Maple also integrates VMU support and saving to a micro-SD card.
 
+# Download
+
+Download the latest firmware [pico2maple_2024-12-15](firmware/pico2maple_2024-12-15.uf2).
+
+To install the firmware on the Pico 2:
+
+* Hold down the BOOTSEL button while connecting the Pico to a PC. This should make it appear as a USB storage device.
+* Copy the pico2maple uf2 file to the Pico. It should reboot itself with the new firmware.
+
 # Supported Controllers
 
 * Steam Controller
