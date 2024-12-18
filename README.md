@@ -60,6 +60,8 @@ With everything wired up, it's simply a matter of plugging in a USB device to th
 
 # Future Work
 
+*Feedback on this project is very welcome!*
+
 * Support a wider range of USB controllers.
 * Bluetooth connectivity for Pico 2 W.
 * Multiple controllers on a single Pico 2.
