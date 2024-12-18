@@ -1,6 +1,6 @@
 # Pico2Maple
 
-Example Project            |  
+Example Project            |  Connected to Dreamcast
 :-------------------------:|:-------------------------:
 ![Pico2Maple box](resources/images/wooden_box.jpg)  |  ![Powered on](resources/images/wooden_box_powered_on.jpg)
 
