@@ -29,6 +29,7 @@ Controls are mapped as you would expect with a few extra features:
 ![Hardware needed](resources/images/hardware_components.jpg)
 
 * Raspberry Pi Pico 2
+* Dreamcast controller cable or plug
 * Micro-USB to female USB-A adapter
 * Optional:
   * A SPI micro-SD breakout board for saving VMU data ([example](https://www.amazon.ca/dp/B0CD79YZH6))
