@@ -58,6 +58,12 @@ Connect the controller wires to the labelled pins on the Pico below by soldering
 
 With everything wired up, it's simply a matter of plugging in a USB device to the Pico using the USB-A to Mini-USB adapter and plugging the controller cable into the Dreamcast.
 
+# Future Work
+
+* Support a wider range of USB controllers.
+* Bluetooth connectivity for Pico 2 W.
+* Multiple controllers on a single Pico 2.
+
 # Libraries
 
 * [tsub_xinput](https://github.com/Ryzee119/tusb_xinput) - MIT
