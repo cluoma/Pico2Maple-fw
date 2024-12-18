@@ -41,7 +41,7 @@ Controls are mapped as you would expect with a few extra features:
 * Dreamcast controller cable or plug
 * Micro-USB to female USB-A adapter
 * Optional:
-  * SPI micro-SD breakout board for saving VMU data ([example](https://www.amazon.ca/dp/B0CD79YZH6))
+  * SPI micro-SD breakout board and FAT32-formatted micro-SD card for saving VMU data ([example](https://www.amazon.ca/dp/B0CD79YZH6))
   * SSD1306 128x64 OLED display for displaying VMU images and selected VMU bank ([example](https://www.amazon.ca/dp/B0751LFCZT))
 
 # Construction
