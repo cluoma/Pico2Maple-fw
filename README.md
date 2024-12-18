@@ -19,9 +19,9 @@ To install the firmware on the Pico 2:
 
 # Supported Controllers
 
-* Steam Controller
+* Steam Controller (wireless with dongle only)
 * 8BitDo Wireless Dongle (great for connecting a huge variety of other controllers)
-* XInput controllers
+* XInput Controllers
 * USB Keyboards
 * USB Mice (scroll wheel may not work on some simple mice)
 
