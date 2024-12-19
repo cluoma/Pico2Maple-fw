@@ -62,6 +62,7 @@ With everything wired up, it's simply a matter of plugging in a USB device to th
 
 *Feedback on this project is very welcome!*
 
+* Customizable controller layouts saved to micro-SD card
 * Support a wider range of USB controllers.
 * Bluetooth connectivity for Pico 2 W.
 * Multiple controllers on a single Pico 2.
