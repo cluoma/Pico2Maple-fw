@@ -23,7 +23,7 @@ To install the firmware on the Pico 2:
 * 8BitDo Wireless Dongle (great for connecting a huge variety of other controllers)
 * XInput Controllers
 * USB Keyboards
-* USB Mice (scroll wheel may not work on some simple mice)
+* USB Mice (variable compatibility)
 
 # Controls
 
