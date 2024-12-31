@@ -19,11 +19,11 @@ To install the firmware on the Pico 2:
 
 # Supported Controllers
 
-* Steam Controller
+* Steam Controller (wireless with dongle only)
 * 8BitDo Wireless Dongle (great for connecting a huge variety of other controllers)
-* USB XInput-compatible devices
+* XInput Controllers
 * USB Keyboards
-* USB Mice (scroll wheel may not work on some simple mice)
+* USB Mice (variable compatibility)
 
 # Controls
 
@@ -41,8 +41,8 @@ Controls are mapped as you would expect with a few extra features:
 * Dreamcast controller cable or plug
 * Micro-USB to female USB-A adapter
 * Optional:
-  * A SPI micro-SD breakout board for saving VMU data ([example](https://www.amazon.ca/dp/B0CD79YZH6))
-  * A SSD1306 128x64 OLED display for displaying VMU images and selected VMU bank ([example](https://www.amazon.ca/dp/B0751LFCZT))
+  * SPI micro-SD breakout board and FAT32-formatted micro-SD card for saving VMU data ([example](https://www.amazon.ca/dp/B0CD79YZH6))
+  * SSD1306 128x64 OLED display for displaying VMU images and selected VMU bank ([example](https://www.amazon.ca/dp/B0751LFCZT))
 
 # Construction
 
@@ -54,14 +54,15 @@ Connect the controller wires to the labelled pins on the Pico below by soldering
 
 ![Pinout on the Pico 2](resources/images/pico2maple_pinout.jpg)
 
-*Optionally* connect the SPI micro-SD board and the SSD1306 OLED screen to the labelled pins on the Pico 2. Taking care to connect the right Vcc voltages to the respective boards (in my case the micro-SD board needed 5V while the OLED needed 3.3V.
+*Optionally* connect the SPI micro-SD board and the SSD1306 OLED screen to the labelled pins on the Pico 2.
 
-With everything wired up, it's simply a matter of plugging in a USB device to the Pico using the USB-A to Mini-USB adapter and plugging the controller cable into the Dreamcast.
+With everything wired up, it's simply a matter of plugging in a USB device to the Pico 2 using the USB-A to Mini-USB adapter and plugging the Dreamcast controller cable into the console.
 
 # Future Work
 
 *Feedback on this project is very welcome!*
 
+* Customizable controller layouts saved to micro-SD card
 * Support a wider range of USB controllers.
 * Bluetooth connectivity for Pico 2 W.
 * Multiple controllers on a single Pico 2.
