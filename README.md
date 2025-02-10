@@ -10,7 +10,7 @@ Currently, it is possible to use several USB controllers, dongles, mice, and key
 
 # Download
 
-Download the latest firmware [pico2maple_2024-12-15](firmware/pico2maple_2024-12-15.uf2).
+Download the latest firmware [pico2maple_2025-02-09](firmware/pico2maple_2025-02-09.uf2).
 
 To install the firmware on the Pico 2:
 
@@ -57,6 +57,17 @@ Connect the controller wires to the labelled pins on the Pico below by soldering
 *Optionally* connect the SPI micro-SD board and the SSD1306 OLED screen to the labelled pins on the Pico 2.
 
 With everything wired up, it's simply a matter of plugging in a USB device to the Pico 2 using the USB-A to Mini-USB adapter and plugging the Dreamcast controller cable into the console.
+
+# Changlog
+
+## 2025-02-09
+
+* Improved stability of the Maple bus
+* Additional OLED display features showing what type of device is active (controller, keyboard, or mouse)
+
+## 2024-12-15
+
+* Initial release
 
 # Future Work
 
