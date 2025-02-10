@@ -69,5 +69,6 @@ With everything wired up, it's simply a matter of plugging in a USB device to th
 
 # Libraries
 
+* [tinyusb](https://github.com/hathach/tinyusb) - MIT
 * [tsub_xinput](https://github.com/Ryzee119/tusb_xinput) - MIT
 * [no-OS-FatFS-SD-SDIO-SPI-RPi-Pico](https://github.com/carlk3/no-OS-FatFS-SD-SDIO-SPI-RPi-Pico) - Apache 2.0
