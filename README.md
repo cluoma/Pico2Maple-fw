@@ -1,7 +1,8 @@
 # Pico2Maple
 
-Example Project            |  Connected to Dreamcast
+Example Projects           |  Connected to Dreamcast
 :-------------------------:|:-------------------------:
+![Pico2Maple three dongles](resources/images/pico2maple_dongles.jpg)  |  ![Pico2Maple white dongle](resources/images/pico2maple_dongle_white.jpg)
 ![Pico2Maple box](resources/images/wooden_box.jpg)  |  ![Powered on](resources/images/wooden_box_powered_on.jpg)
 
 Pico2Maple is a Dreamcast Maple bus emulator for the RP2350. The goal of this project of to provide a way to for people to use a variety of non-Dreamcast controllers and accessories on the Sega Dreamcast.
