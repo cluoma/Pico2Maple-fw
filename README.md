@@ -1,6 +1,6 @@
 # Pico2Maple
 
-Example Projects           |  
+Example Projects           |  Connected to Dreamcast
 :-------------------------:|:-------------------------:
 ![Pico2Maple three dongles](resources/images/pico2maple_dongles.jpg)  |  ![Powered on](resources/images/wooden_box_powered_on.jpg)
 
