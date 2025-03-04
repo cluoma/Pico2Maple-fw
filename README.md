@@ -6,11 +6,11 @@
 
 Pico2Maple is a Dreamcast Maple bus emulator for the RP2350. The goal of this project of to provide a way to for people to use a variety of non-Dreamcast controllers and accessories on the Sega Dreamcast.
 
-Currently, it is possible to use several USB controllers, dongles, mice, and keyboards. Pico2Maple also integrates VMU support and saving to a micro-SD card.
+Currently, it is possible to use several USB controllers, dongles, mice, and keyboards. Pico2Maple also integrates VMU support and saving to a microSD card.
 
 # Download
 
-Download the latest firmware [pico2maple_2025-02-09](firmware/pico2maple_2025-02-09.uf2).
+Download the latest firmware [pico2maple_2025-03-03](firmware/pico2maple_2025-03-03.uf2).
 
 To install the firmware on the Pico 2:
 
@@ -21,17 +21,20 @@ To install the firmware on the Pico 2:
 
 * Steam Controller (wireless with dongle only)
 * 8BitDo Wireless Dongle (great for connecting a huge variety of other controllers)
+* 8BitDo SN30 Pro Xbox Edition
+* Sony DualSense 5
 * XInput Controllers
 * USB Keyboards
-* USB Mice (variable compatibility)
+* USB Mice (scroll wheel may not work on some mice)
 
 # Controls
 
 Controls are mapped as you would expect with a few extra features:
 
-* **Select + Right Bumper/Left Bumper** switch currently-active VMU bank (cycles through 10 different VMU banks)
-* **Select + A** enable standard Dreamcast controller layout
+* **Select + Right Bumper/Left Bumper** switch currently-active VMU bank (cycles through 10 different VMU banks).
+* **Select + A** enable standard Dreamcast controller layout.
 * **Select + B** enable all controller inputs which activates the second joystick and the C,Z buttons. Z is mapped to left bumper and C to right bumper. Not all games will accept this layout. 
+* **Select + X** enable Twin Stick layout. Uses both controller joysticks, bumpers and triggers.
 
 # Required Hardware
 
@@ -41,7 +44,7 @@ Controls are mapped as you would expect with a few extra features:
 * Dreamcast controller cable or plug
 * Micro-USB to female USB-A adapter
 * Optional:
-  * SPI micro-SD breakout board and FAT32-formatted micro-SD card for saving VMU data ([example](https://www.amazon.ca/dp/B0CD79YZH6))
+  * SPI microSD breakout board and FAT32-formatted microSD card for saving VMU data ([example](https://www.amazon.ca/dp/B0CD79YZH6))
   * SSD1306 128x64 OLED display for displaying VMU images and selected VMU bank ([example](https://www.amazon.ca/dp/B0751LFCZT))
 
 # Construction
@@ -60,6 +63,14 @@ With everything wired up, it's simply a matter of plugging in a USB device to th
 
 # Changlog
 
+## 2025-03-03
+
+* Add support for Twin Stick layout, press Select+X to enable
+* OLED improvements
+* Change VMU data location on flash storage, backup your internal VMU data before updating
+* Automatically backup internal VMU data to microSD card on boot
+* Additional stability improvements in preparation for bluetooth support
+
 ## 2025-02-09
 
 * Improved stability of the Maple bus
@@ -73,9 +84,9 @@ With everything wired up, it's simply a matter of plugging in a USB device to th
 
 *Feedback on this project is very welcome!*
 
-* Customizable controller layouts saved to micro-SD card
-* Support a wider range of USB controllers.
-* Bluetooth connectivity for Pico 2 W.
+* Customizable controller layouts saved to microSD card
+* Support a wider range of USB controllers (ongoing).
+* Bluetooth connectivity for Pico 2 W (almost there!).
 * Multiple controllers on a single Pico 2.
 
 # Libraries
