@@ -10,7 +10,10 @@ Currently, it is possible to use several USB controllers, dongles, mice, and key
 
 # Download
 
-Download the latest firmware [pico2maple_2025-03-03](firmware/pico2maple_2025-03-03.uf2).
+Download the latest firmware:
+
+* [pico2maple_2025-04-06](firmware/pico2maple_2025-04-06.uf2), USB only for Pico 2 and W boards.
+* [pico2maple-w_2025-04-06](firmware/pico2maple-w_2025-04-06.uf2), USB and wireless for Pico 2 W boards.
 
 To install the firmware on the Pico 2:
 
@@ -63,6 +66,11 @@ With everything wired up, it's simply a matter of plugging in a USB device to th
 
 # Changlog
 
+## 2025-04-09
+
+* Wireless support for Pico2 W boards. A USB device will be used if detected, otherwise will search for a bt device.
+* Refactoring of USB code
+
 ## 2025-03-03
 
 * Add support for Twin Stick layout, press Select+X to enable
@@ -86,11 +94,16 @@ With everything wired up, it's simply a matter of plugging in a USB device to th
 
 * Customizable controller layouts saved to microSD card
 * Support a wider range of USB controllers (ongoing).
-* Bluetooth connectivity for Pico 2 W (almost there!).
 * Multiple controllers on a single Pico 2.
 
 # Libraries
 
+# Code Acknowledgements
+
+* [pico-sdk](https://github.com/raspberrypi/pico-sdk) - [BSD 3-Clause](https://github.com/raspberrypi/pico-sdk/blob/master/LICENSE.TXT)
 * [tinyusb](https://github.com/hathach/tinyusb) - MIT
 * [tsub_xinput](https://github.com/Ryzee119/tusb_xinput) - MIT
 * [no-OS-FatFS-SD-SDIO-SPI-RPi-Pico](https://github.com/carlk3/no-OS-FatFS-SD-SDIO-SPI-RPi-Pico) - Apache 2.0
+* [btstack](https://github.com/bluekitchen/btstack) - [non-commercial](https://github.com/bluekitchen/btstack/blob/master/LICENSE), [pico commercial exception](https://github.com/raspberrypi/pico-sdk/blob/master/src/rp2_common/pico_btstack/LICENSE.RP)
+* [cyw43-driver](https://github.com/georgerobotics/cyw43-driver) - [License](https://github.com/georgerobotics/cyw43-driver/blob/main/LICENSE.RP)
+* [bluepad32](https://github.com/ricardoquesada/bluepad32) - Apache 2.0
