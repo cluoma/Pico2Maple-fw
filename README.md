@@ -102,7 +102,7 @@ With everything wired up, it's simply a matter of plugging in a USB device to th
 
 * [pico-sdk](https://github.com/raspberrypi/pico-sdk) - [BSD 3-Clause](https://github.com/raspberrypi/pico-sdk/blob/master/LICENSE.TXT)
 * [tinyusb](https://github.com/hathach/tinyusb) - MIT
-* [tsub_xinput](https://github.com/Ryzee119/tusb_xinput) - MIT
+* [tusb_xinput](https://github.com/Ryzee119/tusb_xinput) - MIT
 * [no-OS-FatFS-SD-SDIO-SPI-RPi-Pico](https://github.com/carlk3/no-OS-FatFS-SD-SDIO-SPI-RPi-Pico) - Apache 2.0
 * [btstack](https://github.com/bluekitchen/btstack) - [non-commercial](https://github.com/bluekitchen/btstack/blob/master/LICENSE), [pico commercial exception](https://github.com/raspberrypi/pico-sdk/blob/master/src/rp2_common/pico_btstack/LICENSE.RP)
 * [cyw43-driver](https://github.com/georgerobotics/cyw43-driver) - [License](https://github.com/georgerobotics/cyw43-driver/blob/main/LICENSE.RP)
