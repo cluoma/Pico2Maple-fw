@@ -34,7 +34,11 @@ To install the firmware on the Pico 2:
 
 ## BT
 
-See [Bluepad32 supported controller list](https://bluepad32.readthedocs.io/en/latest/supported_gamepads/).
+Pico2Maple uses Bluepad32 to handle BT connectivity. Please see the [Bluepad32 supported controller list](https://bluepad32.readthedocs.io/en/latest/supported_gamepads/) for a summary of supported devices.
+
+Additional support has been added for the following controllers:
+
+* 8BitDo SN30 Pro Xbox Edition
 
 # Controls
 
