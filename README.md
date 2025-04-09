@@ -22,6 +22,8 @@ To install the firmware on the Pico 2:
 
 # Supported Controllers
 
+## USB
+
 * Steam Controller (wireless with dongle only)
 * 8BitDo Wireless Dongle (great for connecting a huge variety of other controllers)
 * 8BitDo SN30 Pro Xbox Edition
@@ -29,6 +31,10 @@ To install the firmware on the Pico 2:
 * XInput Controllers
 * USB Keyboards
 * USB Mice (scroll wheel may not work on some mice)
+
+## BT
+
+See [Bluepad32 supported controller list](https://bluepad32.readthedocs.io/en/latest/supported_gamepads/).
 
 # Controls
 
