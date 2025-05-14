@@ -12,8 +12,8 @@ Currently, it is possible to use several USB controllers, dongles, mice, and key
 
 Download the latest firmware:
 
-* [pico2maple_2025-04-06](firmware/pico2maple_2025-04-06.uf2), USB only for Pico 2 and W boards.
-* [pico2maple-w_2025-04-06](firmware/pico2maple-w_2025-04-06.uf2), USB and wireless for Pico 2 W boards.
+* [pico2maple_2025-05-13](firmware/pico2maple_2025-05-13.uf2), USB only for Pico 2 and W boards.
+* [pico2maple-w_2025-05-13](firmware/pico2maple-w_2025-05-13.uf2), USB and wireless for Pico 2 W boards.
 
 To install the firmware on the Pico 2:
 
@@ -30,7 +30,7 @@ To install the firmware on the Pico 2:
 * Sony DualSense 5
 * XInput Controllers
 * USB Keyboards
-* USB Mice (scroll wheel may not work on some mice)
+* USB Mice
 
 ## BT
 
@@ -39,6 +39,7 @@ Pico2Maple uses Bluepad32 to handle BT connectivity. Please see the [Bluepad32 s
 Additional support has been added for the following controllers:
 
 * 8BitDo SN30 Pro Xbox Edition
+* Improved WiiU Pro Controller support
 
 # Controls
 
@@ -76,6 +77,12 @@ With everything wired up, it's simply a matter of plugging in a USB device to th
 
 # Changlog
 
+## 2025-05-13
+
+* Implemented HID report parsing for handling a wider range of USB devices. PS3/4 controllers *may* work, give it a try
+* Much improved USB mouse compatibility with proper HID parsing
+* Small improvements to controller input handling
+
 ## 2025-04-09
 
 * Wireless support for Pico2 W boards. A USB device will be used if detected, otherwise will search for a bt device.
@@ -104,7 +111,6 @@ With everything wired up, it's simply a matter of plugging in a USB device to th
 
 * Customizable controller layouts saved to microSD card
 * Support a wider range of USB controllers (ongoing).
-* Multiple controllers on a single Pico 2.
 
 # Libraries
 
