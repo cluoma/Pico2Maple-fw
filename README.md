@@ -22,6 +22,8 @@ To install the firmware on the Pico 2:
 
 # Supported Controllers
 
+For a more detailed breakdown of supported devices, please check out the [full device compatibility list](https://docs.google.com/spreadsheets/d/1B8dfP6fLWeEofmxXTmYIQBTP0vJ_oXtTCgR17ZR1jMc/edit?usp=sharing).
+
 ## USB
 
 * Steam Controller (wireless with dongle only)
@@ -34,12 +36,15 @@ To install the firmware on the Pico 2:
 
 ## BT
 
-Pico2Maple uses Bluepad32 to handle BT connectivity. Please see the [Bluepad32 supported controller list](https://bluepad32.readthedocs.io/en/latest/supported_gamepads/) for a summary of supported devices.
+Pico2Maple uses Bluepad32 to handle BT connectivity. Check out [Bluepad32 supported controller list](https://bluepad32.readthedocs.io/en/latest/supported_gamepads/) for a summary of supported devices.
 
-Additional support has been added for the following controllers:
+The following controllers have been tested and confirmed working:
 
+* Sony DualSense PS5 Controller
+* Xbox Series Wireless Controller (3-button version)
+* Nintendo WiiU Pro Controller
+* 8BitDo SN30 Pro
 * 8BitDo SN30 Pro Xbox Edition
-* Improved WiiU Pro Controller support
 
 # Controls
 
@@ -112,9 +117,7 @@ With everything wired up, it's simply a matter of plugging in a USB device to th
 * Customizable controller layouts saved to microSD card
 * Support a wider range of USB controllers (ongoing).
 
-# Libraries
-
-# Code Acknowledgements
+# Use of Open Source Libraries
 
 * [pico-sdk](https://github.com/raspberrypi/pico-sdk) - [BSD 3-Clause](https://github.com/raspberrypi/pico-sdk/blob/master/LICENSE.TXT)
 * [tinyusb](https://github.com/hathach/tinyusb) - MIT
