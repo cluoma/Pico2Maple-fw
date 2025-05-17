@@ -12,8 +12,8 @@ Currently, it is possible to use several USB controllers, dongles, mice, and key
 
 Download the latest firmware:
 
-* [pico2maple_2025-05-13](firmware/pico2maple_2025-05-13.uf2), USB only for Pico 2 and W boards.
-* [pico2maple-w_2025-05-13](firmware/pico2maple-w_2025-05-13.uf2), USB and wireless for Pico 2 W boards.
+* [pico2maple_2025-04-06](firmware/pico2maple_2025-04-06.uf2), USB only for Pico 2 and W boards.
+* [pico2maple-w_2025-04-06](firmware/pico2maple-w_2025-04-06.uf2), USB and wireless for Pico 2 W boards.
 
 To install the firmware on the Pico 2:
 
