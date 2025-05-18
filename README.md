@@ -12,8 +12,8 @@ Currently, it is possible to use several USB controllers, dongles, mice, and key
 
 Download the latest firmware:
 
-* [pico2maple_2025-05-13](firmware/pico2maple_2025-05-13.uf2), USB only for Pico 2 and W boards.
-* [pico2maple-w_2025-05-13](firmware/pico2maple-w_2025-05-13.uf2), USB and wireless for Pico 2 W boards.
+* [pico2maple_2025-05-18](firmware/pico2maple_2025-05-18.uf2), USB only for Pico 2 and W boards.
+* [pico2maple-w_2025-05-18](firmware/pico2maple-w_2025-05-18.uf2), USB and wireless for Pico 2 W boards.
 
 To install the firmware on the Pico 2:
 
@@ -54,6 +54,7 @@ Controls are mapped as you would expect with a few extra features:
 * **Select + A** enable standard Dreamcast controller layout.
 * **Select + B** enable all controller inputs which activates the second joystick and the C,Z buttons. Z is mapped to left bumper and C to right bumper. Not all games will accept this layout. 
 * **Select + X** enable Twin Stick layout. Uses both controller joysticks, bumpers and triggers.
+* **Select + Y** enable Fight Stick layout. This layout remaps RB and RT inputs to the Z and C buttons respectively. LB maps to RT.
 
 # Required Hardware
 
@@ -81,6 +82,10 @@ Connect the controller wires to the labelled pins on the Pico below by soldering
 With everything wired up, it's simply a matter of plugging in a USB device to the Pico 2 using the USB-A to Mini-USB adapter and plugging the Dreamcast controller cable into the console.
 
 # Changlog
+
+## 2025-05-18
+
+* Added a Fight Stick layout to accomodate typical stick layouts where the fifth and sixth buttons are RB and RT. Press Select + Y to enable. This layout remaps RB and RT inputs to the Z and C buttons on the Dreamcast respectively.
 
 ## 2025-05-13
 
