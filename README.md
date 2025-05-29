@@ -119,7 +119,8 @@ With everything wired up, it's simply a matter of plugging in a USB device to th
 
 *Feedback on this project is very welcome!*
 
-* Customizable controller layouts saved to microSD card
+* Customizable controller layouts saved to microSD card (in the works)
+* Rumble support for Xbox/PS controllers
 * Support a wider range of USB controllers (ongoing).
 
 # Use of Open Source Libraries
