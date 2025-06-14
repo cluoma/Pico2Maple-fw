@@ -4,6 +4,8 @@ Pico2Maple has a flexible controller remapping system which allows basically an 
 
 This feature currently requires an SD card attached to the device to load a mapping. However, once the custom layout is loaded, the SD card is no longer needed. A current goal is to find a convenient solution to load custom layouts without the need for an SD card. If you have suggestions, feel free to reach out.
 
+A custom layout can be activated by pressing SELECT+DPAD_RIGHT.
+
 ## The Remapping File
 
 ### File Location
