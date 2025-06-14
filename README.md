@@ -57,7 +57,7 @@ Controls are mapped as you would expect with a few extra features:
 * **Select + B** enable all controller inputs which activates the second joystick and the C,Z buttons. Z is mapped to left bumper and C to right bumper. Not all games will accept this layout. 
 * **Select + X** enable Twin Stick layout. Uses both controller joysticks, bumpers and triggers.
 * **Select + Y** enable Fight Stick layout. This layout remaps RB and RT inputs to the Z and C buttons respectively. LB maps to RT.
-* **SELECT + DRIGHT** enable a custom layout if one has been configured.
+* **Select + Dpad Right** enable a custom layout if one has been configured.
 
 # Custom Controller Layouts/Remapping (work-in-progress)
 
