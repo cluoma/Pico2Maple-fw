@@ -91,7 +91,7 @@ With everything wired up, it's simply a matter of plugging in a USB device to th
 
 ## 2025-06-14
 
-* Experimental support for custom controller layouts/remapping, and SD card is required to load the layout
+* Experimental support for custom controller layouts/remapping, an SD card is required to load the layout. More info at [CONTROLLER_LAYOUTS.md](CONTROLLER_LAYOUTS.md).
 
 ## 2025-05-18
 
