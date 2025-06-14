@@ -58,7 +58,7 @@ Controls are mapped as you would expect with a few extra features:
 * **Select + X** enable Twin Stick layout. Uses both controller joysticks, bumpers and triggers.
 * **Select + Y** enable Fight Stick layout. This layout remaps RB and RT inputs to the Z and C buttons respectively. LB maps to RT.
 
-# Custom Controller Layouts/Remapping
+# Custom Controller Layouts/Remapping (work-in-progress)
 
 Pico2Maple has a fairly flexible controller remapping implementation. Please check out [CONTROLLER_LAYOUTS.md](CONTROLLER_LAYOUTS.md) for full details.
 
@@ -129,7 +129,6 @@ With everything wired up, it's simply a matter of plugging in a USB device to th
 
 *Feedback on this project is very welcome!*
 
-* Customizable controller layouts saved to microSD card (in the works)
 * Rumble support for Xbox/PS controllers
 * Support a wider range of USB controllers (ongoing).
 
