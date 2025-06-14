@@ -22,19 +22,19 @@ Where \<input\> is the name of the input button and <output> is the name of the 
 
 Available **inputs** are standard Xbox-style gamepad buttons:
 
-* A, B, X, Y, LB, RB, LT, RT, START
-* A1_UP/DOWN/LEFT/RIGHT, A2_UP/DOWN/LEFT/RIGHT
-* DPAD_UP/DOWN/LEFT/RIGHT
+* `A, B, X, Y, LB, RB, LT, RT, START`
+* `A1_UP/DOWN/LEFT/RIGHT, A2_UP/DOWN/LEFT/RIGHT`
+* `DPAD_UP/DOWN/LEFT/RIGHT`
 
 Available **outputs** are any Dreamcast controller buttons:
 
-* A, B, X, Y, LT, RT, START, C, Z, D
-* A1_UP/DOWN/LEFT/RIGHT, A2_UP/DOWN/LEFT/RIGHT
-* DPAD_UP/DOWN/LEFT/RIGHT, DPAD2_UP/DOWN/LEFT/RIGHT
+* `A, B, X, Y, LT, RT, START, C, Z, D`
+* `A1_UP/DOWN/LEFT/RIGHT, A2_UP/DOWN/LEFT/RIGHT`
+* `DPAD_UP/DOWN/LEFT/RIGHT, DPAD2_UP/DOWN/LEFT/RIGHT`
 
 ### Example Remapping File
 
-An example of remapping that simply swaps the A/B and X/Y buttons, and is loaded by default, looks like this:
+An example of remapping that simply swaps the `A/B` and `X/Y` buttons, and is loaded by default, looks like this:
 
 ```txt
 # Standard Dreamcast mapping with Nintendo facebutton layout
@@ -59,12 +59,12 @@ OPTION_AUTOLOAD: TRUE
 ## Limitations
 
 * Any input can be mapped to any output.
-* Up to 4 inputs can be mapped to same output. E.g. RB and LB could both map to B.
-    * When multiple inputs map to the same output, the value of the output is determined in an OR fashion. E.g. B will be pressed if either RB *OR* LB is pressed.
-* The same input may be mapped to multiple outputs. E.g. DPAD_UP could activate both A1_UP *and* DPAD_UP.
+* Up to 4 inputs can be mapped to same output. E.g. `RB` and `LB` could both map to `B`.
+    * When multiple inputs map to the same output, the value of the output is determined in an OR fashion. E.g. `B` will be pressed if either `RB` *OR* `LB` is pressed.
+* The same input may be mapped to multiple outputs. E.g. `DPAD_UP` could activate both `A1_UP` *and* `DPAD_UP`.
 * Analog axis for LEFT/RIGHT and UP/DOWN will cancel each other out if both are activated.
 
-Any custom mapping targeting a non-standard Dreamcast button such as C, Z, the second analog etc., will cause Pico2Maple to report itself to the Dreamcast as a controller that has all these buttons. Some games do not like this and will refuse to recognize the controller. A custom mapping that only targets buttons on a standard Dreamcast controller will cause Pico2Maple to show up as a standard controller to the Dreamcast and will avoid this issue.
+Any custom mapping targeting a non-standard Dreamcast button such as `C`, `Z`, the second analog etc., will cause Pico2Maple to report itself to the Dreamcast as a controller that has all these buttons. Some games do not like this and will refuse to recognize the controller. A custom mapping that only targets buttons on a standard Dreamcast controller will cause Pico2Maple to show up as a standard controller to the Dreamcast and will avoid this issue.
 
 ## Options
 
