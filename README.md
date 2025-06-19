@@ -59,9 +59,15 @@ Controls are mapped as you would expect with a few extra features:
 * **Select + Y** enable Fight Stick layout. This layout remaps RB and RT inputs to the Z and C buttons respectively. LB maps to RT.
 * **Select + Dpad Right** enable a custom layout if one has been configured.
 
-# Custom Controller Layouts/Remapping (work-in-progress)
+# Custom Controller Layouts
 
-Pico2Maple has a fairly flexible controller remapping implementation. Please check out [CONTROLLER_LAYOUTS.md](CONTROLLER_LAYOUTS.md) for full details.
+Custom controller layouts are currently a work-in-progress and feedback is greatly appreciated.
+
+Pico2Maple has a fairly flexible controller remapping implementation the basically allows the entire controller to be reconfigured.
+
+For general details and instructions on how to load a custom layout from an SD card, please check out [CONTROLLER_LAYOUTS.md](CONTROLLER_LAYOUTS.md).
+
+Optionally, custom layouts can be created through the [Controller Mapper tool](https://cluoma.github.io/Pico2Maple-config/) and uploaded using Raspberry Pi's [picotool](https://github.com/raspberrypi/picotool).
 
 # Required Hardware
 
