@@ -8,7 +8,7 @@ Pico2Maple is a Dreamcast Maple bus emulator for the RP2350. The goal of this pr
 
 Currently, it is possible to use several USB controllers, dongles, mice, and keyboards. Pico2Maple also integrates VMU support and saving to a microSD card.
 
-Feel free to hop into the [Discord server](https://discord.gg/eW2u4aHR) to discuss the project, ask questions, or share your own projects using Pico2Maple.
+Feel free to hop into the [Discord server](https://discord.gg/MpFB7j389x) to discuss the project, ask questions, or share your own projects using Pico2Maple.
 
 # Download
 
