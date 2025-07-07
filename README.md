@@ -61,7 +61,7 @@ Controls are mapped as you would expect with a few extra features:
 
 # Custom Controller Layouts
 
-Pico2Maple has a fairly flexible controller remapping implementation the basically allows the entire controller to be reconfigured. Custom controller layouts are currently a work-in-progress and feedback is greatly appreciated.
+Pico2Maple has a fairly flexible controller remapping implementation which allows the entire controller to be reconfigured. Custom controller layouts are currently a work-in-progress and feedback is greatly appreciated.
 
 The easiest method to create a layout is to use the [Pico2Maple Mapper tool](https://cluoma.github.io/Pico2Maple-config/). Custom layouts can then be uploaded to the device using Raspberry Pi's [picotool](https://github.com/raspberrypi/picotool). Pre-compiled picotool binaries are [also available](https://github.com/raspberrypi/pico-sdk-tools).
 
