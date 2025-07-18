@@ -62,13 +62,11 @@ Controls are mapped as you would expect with a few extra features:
 
 # Custom Controller Layouts
 
-Custom controller layouts are currently a work-in-progress and feedback is greatly appreciated.
+Pico2Maple has a fairly flexible controller remapping implementation which allows the entire controller to be reconfigured. Custom controller layouts are currently a work-in-progress and feedback is greatly appreciated.
 
-Pico2Maple has a fairly flexible controller remapping implementation the basically allows the entire controller to be reconfigured.
+The easiest method to create a layout is to use the [Pico2Maple Mapper tool](https://cluoma.github.io/Pico2Maple-config/). Custom layouts can then be uploaded to the device using Raspberry Pi's [picotool](https://github.com/raspberrypi/picotool). Pre-compiled picotool binaries are [also available](https://github.com/raspberrypi/pico-sdk-tools).
 
-For general details and instructions on how to load a custom layout from an SD card, please check out [CONTROLLER_LAYOUTS.md](CONTROLLER_LAYOUTS.md).
-
-Optionally, custom layouts can be created through the [Controller Mapper tool](https://cluoma.github.io/Pico2Maple-config/) and uploaded using Raspberry Pi's [picotool](https://github.com/raspberrypi/picotool).
+Optionally, for instructions on how to load a custom layout from an SD card, please check out the [Controller Layouts docs](CONTROLLER_LAYOUTS.md). Layouts loaded from an SD card will be stored internally so only need to be loaded once.
 
 # Required Hardware
 
