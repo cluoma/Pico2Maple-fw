@@ -14,8 +14,8 @@ Feel free to hop into the [Discord server](https://discord.gg/MpFB7j389x) to dis
 
 Download the latest firmware:
 
-* [pico2maple_2025-06-14](firmware/pico2maple_2025-06-14.uf2), USB only for Pico 2 and W boards.
-* [pico2maple-w_2025-06-14](firmware/pico2maple-w_2025-06-14.uf2), USB and wireless for Pico 2 W boards.
+* [pico2maple_2025-07-17](firmware/pico2maple_2025-07-17.uf2), USB only for Pico 2 and W boards.
+* [pico2maple-w_2025-07-17](firmware/pico2maple-w_2025-07-17.uf2), USB and wireless for Pico 2 W boards.
 
 To install the firmware on the Pico 2:
 
@@ -31,6 +31,7 @@ For a more detailed breakdown of supported devices, please check out the [full d
 * Steam Controller (wireless with dongle only)
 * 8BitDo Wireless Dongle (great for connecting a huge variety of other controllers)
 * 8BitDo SN30 Pro Xbox Edition
+* Sony DualShock 3
 * Sony DualSense 5
 * XInput Controllers
 * USB Keyboards
@@ -95,6 +96,12 @@ Connect the controller wires to the labelled pins on the Pico below by soldering
 With everything wired up, it's simply a matter of plugging in a USB device to the Pico 2 using the USB-A to Mini-USB adapter and plugging the Dreamcast controller cable into the console.
 
 # Changlog
+
+## 2025-07-17
+
+* Fully tested USB support for PlayStation 3 controller. Many third-party PS3 compatible controllers will be detected but are untested. GP-2040CE now works with either PS3 or XInput modes.
+* Improved Twin Stick controller mapping to accommodate Hori 360 Twin Sticks.
+* BT support for Dreamwave controller.
 
 ## 2025-06-14
 
