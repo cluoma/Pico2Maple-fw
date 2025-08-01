@@ -14,8 +14,8 @@ Feel free to hop into the [Discord server](https://discord.gg/MpFB7j389x) to dis
 
 Download the latest firmware:
 
-* [pico2maple_2025-07-17](firmware/pico2maple_2025-07-17.uf2), USB only for Pico 2 and W boards.
-* [pico2maple-w_2025-07-17](firmware/pico2maple-w_2025-07-17.uf2), USB and wireless for Pico 2 W boards.
+* [pico2maple_2025-08-01](firmware/pico2maple_2025-08-01.uf2), USB only for Pico 2 and W boards.
+* [pico2maple-w_2025-08-01](firmware/pico2maple-w_2025-08-01.uf2), USB and wireless for Pico 2 W boards.
 
 To install the firmware on the Pico 2:
 
@@ -29,11 +29,10 @@ For a more detailed breakdown of supported devices, please check out the [full d
 ## USB
 
 * Steam Controller (wireless with dongle only)
+* Sony PlayStation DS 3/4/5 Controllers
+* XInput Controllers (Xbox 360, One, Series, etc.)
 * 8BitDo Wireless Dongle (great for connecting a huge variety of other controllers)
 * 8BitDo SN30 Pro Xbox Edition
-* Sony DualShock 3
-* Sony DualSense 5
-* XInput Controllers
 * USB Keyboards
 * USB Mice
 
@@ -43,7 +42,7 @@ Pico2Maple uses Bluepad32 to handle BT connectivity. Check out [Bluepad32 suppor
 
 The following controllers have been tested and confirmed working:
 
-* Sony DualSense PS5 Controller
+* Sony PlayStation DS 4/5 Controllers
 * Xbox Series Wireless Controller (3-button version)
 * Nintendo WiiU Pro Controller
 * 8BitDo SN30 Pro
@@ -94,6 +93,11 @@ Connect the controller wires to the labelled pins on the Pico below by soldering
 With everything wired up, it's simply a matter of plugging in a USB device to the Pico 2 using the USB-A to Mini-USB adapter and plugging the Dreamcast controller cable into the console.
 
 # Changlog
+
+## 2025-08-01
+
+* Fully tested USB and BT support for PlayStation 4 controller. Many third-party PS4 compatible controllers will be detected but are untested.
+* Move to pico-sdk 2.2.0
 
 ## 2025-07-17
 
