@@ -14,8 +14,8 @@ Feel free to hop into the [Discord server](https://discord.gg/MpFB7j389x) to dis
 
 Download the latest firmware:
 
-* [pico2maple_2025-08-01](firmware/pico2maple_2025-08-01.uf2), USB only for Pico 2 and W boards.
-* [pico2maple-w_2025-08-01](firmware/pico2maple-w_2025-08-01.uf2), USB and wireless for Pico 2 W boards.
+* [pico2maple_2025-09-07](firmware/pico2maple_2025-09-07.uf2), USB only for Pico 2 and W boards.
+* [pico2maple-w_2025-09-07](firmware/pico2maple-w_2025-09-07.uf2), USB and wireless for Pico 2 W boards.
 
 To install the firmware on the Pico 2:
 
@@ -58,6 +58,7 @@ Controls are mapped as you would expect with a few extra features:
 * **Select + X** enable Twin Stick layout. Uses both controller joysticks, bumpers and triggers.
 * **Select + Y** enable Fight Stick layout. This layout remaps RB and RT inputs to the Z and C buttons respectively. LB maps to RT.
 * **Select + Dpad Right** enable a custom layout if one has been configured.
+* **Select + Dpad Left** enable Racing Wheel layout. This layout will appear as an official Dreamcast Racing Wheel to games that support it.
 
 # Custom Controller Layouts
 
@@ -93,6 +94,11 @@ Connect the controller wires to the labelled pins on the Pico below by soldering
 With everything wired up, it's simply a matter of plugging in a USB device to the Pico 2 using the USB-A to Mini-USB adapter and plugging the Dreamcast controller cable into the console.
 
 # Changlog
+
+## 2025-09-07
+
+* Added a new layout which will appear as an official Dreamcast Racing Wheel to games that support it. Press Select + Dpad Left to enable.
+* Added support for Logitech G29 Racing Wheel via USB with PS4 mode. Have a racing wheel you want supported? Make a GitHub issue or join the Discord server to discuss!
 
 ## 2025-08-01
 
