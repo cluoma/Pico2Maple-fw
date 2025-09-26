@@ -95,6 +95,11 @@ With everything wired up, it's simply a matter of plugging in a USB device to th
 
 # Changlog
 
+## 2025-09-25
+
+* Fixed bug in custom mappings where left and right bumpers were ignored
+* Added text mapping download [Pico2Maple Mapper tool](https://cluoma.github.io/Pico2Maple-config/) for easy SD card loading
+
 ## 2025-09-07
 
 * Added a new layout which will appear as an official Dreamcast Racing Wheel to games that support it. Press Select + Dpad Left to enable.
