@@ -1,4 +1,4 @@
-# Custom Controller Layouts/Remappings
+# Pico2Maple - Custom Controller Layouts/Remappings
 
 Pico2Maple has a flexible controller remapping system which allows basically an entire controller to be remapped.
 

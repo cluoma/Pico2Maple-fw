@@ -14,8 +14,8 @@ Feel free to hop into the [Discord server](https://discord.gg/MpFB7j389x) to dis
 
 Download the latest firmware:
 
-* [pico2maple_2025-09-07](firmware/pico2maple_2025-09-07.uf2), USB only for Pico 2 and W boards.
-* [pico2maple-w_2025-09-07](firmware/pico2maple-w_2025-09-07.uf2), USB and wireless for Pico 2 W boards.
+* [pico2maple_2025-10-04](firmware/pico2maple_2025-10-04.uf2), USB only for Pico 2 and W boards.
+* [pico2maple-w_2025-10-04](firmware/pico2maple-w_2025-10-04.uf2), USB and wireless for Pico 2 W boards.
 
 To install the firmware on the Pico 2:
 
@@ -30,7 +30,7 @@ For a more detailed breakdown of supported devices, please check out the [full d
 
 * Steam Controller (wireless with dongle only)
 * Sony PlayStation DS 3/4/5 Controllers
-* XInput Controllers (Xbox 360, One, Series, etc.)
+* XInput Controllers (OG Xbox, Xbox 360, One, Series, etc.)
 * 8BitDo Wireless Dongle (great for connecting a huge variety of other controllers)
 * 8BitDo SN30 Pro Xbox Edition
 * USB Keyboards
@@ -64,9 +64,9 @@ Controls are mapped as you would expect with a few extra features:
 
 Pico2Maple has a fairly flexible controller remapping implementation which allows the entire controller to be reconfigured. Custom controller layouts are currently a work-in-progress and feedback is greatly appreciated.
 
-The easiest method to create a layout is to use the [Pico2Maple Mapper tool](https://cluoma.github.io/Pico2Maple-config/). Custom layouts can then be uploaded to the device using Raspberry Pi's [picotool](https://github.com/raspberrypi/picotool). Pre-compiled picotool binaries are [also available](https://github.com/raspberrypi/pico-sdk-tools).
+The easiest method to create a layout is to use the [Pico2Maple Mapper tool](https://cluoma.github.io/Pico2Maple-config/). Custom layouts can then be uploaded to the device using an SD card or Raspberry Pi's [picotool](https://github.com/raspberrypi/picotool). Pre-compiled picotool binaries are [also available](https://github.com/raspberrypi/pico-sdk-tools).
 
-Optionally, for instructions on how to load a custom layout from an SD card, please check out the [Controller Layouts docs](CONTROLLER_LAYOUTS.md). Layouts loaded from an SD card will be stored internally so only need to be loaded once.
+Optionally, for instructions on how to manually load a custom layout from an SD card, please check out the [Controller Layouts docs](docs/controller_layouts.md). Layouts loaded from an SD card will be stored internally so only need to be loaded once.
 
 # Required Hardware
 
@@ -92,65 +92,6 @@ Connect the controller wires to the labelled pins on the Pico below by soldering
 *Optionally* connect the SPI micro-SD board and the SSD1306 OLED screen to the labelled pins on the Pico 2.
 
 With everything wired up, it's simply a matter of plugging in a USB device to the Pico 2 using the USB-A to Mini-USB adapter and plugging the Dreamcast controller cable into the console.
-
-# Changlog
-
-## 2025-09-25
-
-* Fixed bug in custom mappings where left and right bumpers were ignored
-* Added text mapping download to [Pico2Maple Mapper tool](https://cluoma.github.io/Pico2Maple-config/) for easy SD card loading
-
-## 2025-09-07
-
-* Added a new layout which will appear as an official Dreamcast Racing Wheel to games that support it. Press Select + Dpad Left to enable.
-* Added support for Logitech G29 Racing Wheel via USB with PS4 mode. Have a racing wheel you want supported? Make a GitHub issue or join the Discord server to discuss!
-
-## 2025-08-01
-
-* Fully tested USB and BT support for PlayStation 4 controller. Many third-party PS4 compatible controllers will be detected but are untested.
-* Move to pico-sdk 2.2.0
-
-## 2025-07-17
-
-* Fully tested USB support for PlayStation 3 controller. Many third-party PS3 compatible controllers will be detected but are untested. GP-2040CE now works with either PS3 or XInput modes.
-* Improved Twin Stick controller mapping to accommodate Hori 360 Twin Sticks.
-* BT support for Dreamwave controller.
-
-## 2025-06-14
-
-* Experimental support for custom controller layouts/remapping, an SD card is required to load the layout. More info at [CONTROLLER_LAYOUTS.md](CONTROLLER_LAYOUTS.md).
-
-## 2025-05-18
-
-* Added a Fight Stick layout to accomodate typical stick layouts where the fifth and sixth buttons are RB and RT. Press Select + Y to enable. This layout remaps RB and RT inputs to the Z and C buttons on the Dreamcast respectively.
-
-## 2025-05-13
-
-* Implemented HID report parsing for handling a wider range of USB devices. PS3/4 controllers *may* work, give it a try
-* Much improved USB mouse compatibility with proper HID parsing
-* Small improvements to controller input handling
-
-## 2025-04-09
-
-* Wireless support for Pico2 W boards. A USB device will be used if detected, otherwise will search for a bt device.
-* Refactoring of USB code
-
-## 2025-03-03
-
-* Add support for Twin Stick layout, press Select+X to enable
-* OLED improvements
-* Change VMU data location on flash storage, backup your internal VMU data before updating
-* Automatically backup internal VMU data to microSD card on boot
-* Additional stability improvements in preparation for bluetooth support
-
-## 2025-02-09
-
-* Improved stability of the Maple bus
-* Additional OLED display features showing what type of device is active (controller, keyboard, or mouse)
-
-## 2024-12-15
-
-* Initial release
 
 # Future Work
 
