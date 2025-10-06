@@ -29,7 +29,7 @@ Once downloaded, connect Pico2Maple in BOOTSEL mode (connect to a computer while
 
 ## SD Card Upload
 
-Loading a custom controller layout using an SD card is also fairly straightforward.
+Loading a custom controller layout using an SD card is even easier.
 
 Configure your layout using the [Pico2Maple Controller Mapper](https://cluoma.github.io/Pico2Maple-config/) webpage and download it using the 'Download Mapping for microSD Card' button.
 
@@ -37,7 +37,7 @@ Copy the downloaded file to the `/pico2maple/` folder on your SD card.
 
 ## The Config File
 
-The following section describes the full details the controller map config file that is used for loading to an SD card.
+The following section describes the full details of the controller map config file that is used for loading to an SD card.
 
 For the adventurous folks, editting this file directly may be simpler than using the webpage.
 
