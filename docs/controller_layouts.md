@@ -10,6 +10,14 @@ Regardless of upload method, the custom layout will be saved internally and thus
 
 ## Picotool Upload
 
+### Picotool
+
+`picotool` is an application provided by Raspberry Pi to interact with Pico devices and firmwares.
+
+Pre-compiled `picotool` binaries are available through the [pico-sdk-tools](https://github.com/raspberrypi/pico-sdk-tools) repository.
+
+### Upload via Picotool
+
 Direct uploads are a two step process.
 
 * Create and download your custom mapping using the [Pico2Maple Controller Mapper](https://cluoma.github.io/Pico2Maple-config/) webpage.
