@@ -1,5 +1,9 @@
 # Pico2Maple Changelog
 
+## 2025-10-24
+
+* Added rumble support for PS4, PS5, and Xbox controllers on USB and BT. Select + Dpad Down to enable/disable.
+
 ## 2025-10-04
 
 * Improved deadzone handling of analog sticks for all XInput devices using USB

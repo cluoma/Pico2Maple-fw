@@ -6,7 +6,7 @@
 
 Pico2Maple is a Dreamcast Maple bus emulator for the RP2350. The goal of this project of to provide a way to for people to use a variety of non-Dreamcast controllers and accessories on the Sega Dreamcast.
 
-Currently, it is possible to use several USB controllers, dongles, mice, and keyboards. Pico2Maple also integrates VMU support and saving to a microSD card.
+Currently, it is possible to use several USB controllers, dongles, mice, and keyboards. Pico2Maple also integrates VMU support, saving to a microSD card, and rumble.
 
 Feel free to hop into the [Discord server](https://discord.gg/MpFB7j389x) to discuss the project, ask questions, or share your own projects using Pico2Maple.
 
@@ -14,8 +14,8 @@ Feel free to hop into the [Discord server](https://discord.gg/MpFB7j389x) to dis
 
 Download the latest firmware:
 
-* [pico2maple_2025-10-04](firmware/pico2maple_2025-10-04.uf2), USB only for Pico 2 and W boards.
-* [pico2maple-w_2025-10-04](firmware/pico2maple-w_2025-10-04.uf2), USB and wireless for Pico 2 W boards.
+* [pico2maple_2025-10-24](firmware/pico2maple_2025-10-24.uf2), USB only for Pico 2 and W boards.
+* [pico2maple-w_2025-10-24](firmware/pico2maple-w_2025-10-24.uf2), USB and wireless for Pico 2 W boards.
 
 To install the firmware on the Pico 2:
 
@@ -59,6 +59,7 @@ Controls are mapped as you would expect with a few extra features:
 * **Select + Y** enable Fight Stick layout. This layout remaps RB and RT inputs to the Z and C buttons respectively. LB maps to RT.
 * **Select + Dpad Right** enable a custom layout if one has been configured.
 * **Select + Dpad Left** enable Racing Wheel layout. This layout will appear as an official Dreamcast Racing Wheel to games that support it.
+* **Select + Dpad Down** enable/disable rumble
 
 # Custom Controller Layouts
 
@@ -97,7 +98,6 @@ With everything wired up, it's simply a matter of plugging in a USB device to th
 
 *Feedback on this project is very welcome!*
 
-* Rumble support for Xbox/PS controllers
 * Support a wider range of USB controllers (ongoing).
 
 # Use of Open Source Libraries
