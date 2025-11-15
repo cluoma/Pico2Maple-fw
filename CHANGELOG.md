@@ -1,5 +1,9 @@
 # Pico2Maple Changelog
 
+## 2025-11-15
+
+* Improved Switch Pro controller support on USB and BT
+
 ## 2025-10-24
 
 * Added rumble support for PS4, PS5, and Xbox controllers on USB and BT. Select + Dpad Down to enable/disable.
