@@ -16,8 +16,8 @@ Feel free to hop into the [Discord server](https://discord.gg/MpFB7j389x) to dis
 
 Download the latest firmware:
 
-* [pico2maple_2025-11-15](firmware/pico2maple_2025-11-15.uf2), USB only for Pico 2 and W boards.
-* [pico2maple-w_2025-11-15](firmware/pico2maple-w_2025-11-15.uf2), USB and wireless for Pico 2 W boards.
+* [pico2maple_2025-12-29](firmware/pico2maple_2025-12-29.uf2), USB only for Pico 2 and W boards.
+* [pico2maple-w_2025-12-29](firmware/pico2maple-w_2025-12-29.uf2), USB and wireless for Pico 2 W boards.
 
 To install the firmware on the Pico 2:
 
@@ -32,11 +32,14 @@ For a more detailed breakdown of supported devices, please check out the [full d
 
 * Steam Controller (wireless with dongle only)
 * Sony PlayStation DS 3/4/5 Controllers
+* Nintendo Switch Pro Controller
 * XInput Controllers (OG Xbox, Xbox 360, One, Series, etc.)
 * 8BitDo Wireless Dongle (great for connecting a huge variety of other controllers)
 * 8BitDo SN30 Pro Xbox Edition
 * USB Keyboards
 * USB Mice
+
+Many generic gamepads are also supported. Please create an issue if your USB gamepad does not work.
 
 ## BT
 
@@ -46,9 +49,10 @@ The following controllers have been tested and confirmed working:
 
 * Sony PlayStation DS 4/5 Controllers
 * Xbox Series Wireless Controller (3-button version)
-* Nintendo WiiU Pro Controller
+* Nintendo WiiU and Switch Pro Controllers
 * 8BitDo SN30 Pro
 * 8BitDo SN30 Pro Xbox Edition
+* [Dreamwave Controller](https://github.com/cluoma/dreamwave)
 
 # Controls
 
@@ -100,6 +104,7 @@ With everything wired up, it's simply a matter of plugging in a USB device to th
 
 *Feedback on this project is very welcome!*
 
+* Alternate pin assignment to accommodate more RP2350 boards
 * Support a wider range of USB controllers (ongoing).
 
 # Use of Open Source Libraries

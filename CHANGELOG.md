@@ -1,5 +1,11 @@
 # Pico2Maple Changelog
 
+## 2025-12-29
+
+* Support pairing and use of some BT keyboards (only one has been tested)
+* Add support for SJ@JX arcade stick USB board
+* Improve maple timings
+
 ## 2025-11-15
 
 * Improved Switch Pro controller support on USB and BT
