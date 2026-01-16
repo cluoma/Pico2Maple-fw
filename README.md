@@ -54,6 +54,17 @@ The following controllers have been tested and confirmed working:
 * 8BitDo SN30 Pro Xbox Edition
 * [Dreamwave Controller](https://github.com/cluoma/dreamwave)
 
+### BT Pairing
+
+By default, Pico2Maple boots into discoverable and pairing mode when no device is connected. Starting a sync/pairing action on a controller will initiate a connection to Pico2Maple.
+
+Different controllers have different methods to start a sync/pairing action.
+
+* PlayStation DS 4/5 Controllers: press and hold the PlayStation and Share buttons simultaneously until the lightbar blinks quickly.
+* Xbox Series Wireless Controller: press and hold the small sync button on the front of the controller until the Xbox light blinks quickly.
+* Nintendo WiiU Pro Controller: press the red sync button on the back of the controller.
+* Nintendo Switch Pro Controller: press and hold the small sync button on the front of the controller until the player LEDs start blinking.
+
 # Controls
 
 Controls are mapped as you would expect with a few extra features:
