@@ -1,5 +1,14 @@
 # Pico2Maple Changelog
 
+## 2026-02-05
+
+* GameID is now a supported feature. Many thanks to Derek (aka ateam) for including Pico2Maple as a supported GameID device in OpenMenu
+  * GameID requires a GDEMU, an SD card, and at least [version 1.2 of OpenMenu](https://github.com/DerekPascarella/openMenu-Virtual-Folder-Bundle/releases)
+  * GameID can be enabled by incrementing the VMU to slot 11. `GID` will be shown on the OLED to indicate that it is active
+  * When starting a game through OpenMenu, a VMU specific to that title will be loaded and used
+* VMU buzzer PWM signals are now available on GPIO3. The PWM signal is 1-to-1 with what a real VMU emits and can be used to drive an external buzzer circuit
+* An alternate pin layout is available by grounding GPIO15. The alternate layout should better accommodate third-party RP2350 boards such as the RP2350-Zero
+
 ## 2025-12-29
 
 * Support pairing and use of some BT keyboards (only one has been tested)

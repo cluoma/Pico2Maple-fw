@@ -6,7 +6,7 @@
 
 Pico2Maple is a Dreamcast Maple bus emulator for the RP2350. The goal of this project of to provide a way to for people to use a variety of non-Dreamcast controllers and accessories on the Sega Dreamcast. Currently, it is possible to use several USB controllers, dongles, mice, and keyboards.
 
-Pico2Maple also integrates VMU support with the ability to save to a microSD card.
+Pico2Maple also integrates VMU support with the ability to save to a microSD card. GameID is also supported with GDEMU and OpenMenu v1.2+ providing automatic switching to game-specific VMUs.
 
 Rumble emulation is available for PS4, PS5, and Xbox controllers connected via USB or BT.
 
@@ -16,8 +16,8 @@ Feel free to hop into the [Discord server](https://discord.gg/MpFB7j389x) to dis
 
 Download the latest firmware:
 
-* [pico2maple_2025-12-29](firmware/pico2maple_2025-12-29.uf2), USB only for Pico 2 and W boards.
-* [pico2maple-w_2025-12-29](firmware/pico2maple-w_2025-12-29.uf2), USB and wireless for Pico 2 W boards.
+* [pico2maple_2026-02-06](firmware/pico2maple_2026-02-06.uf2), USB only for Pico 2 and W boards.
+* [pico2maple-w_2026-02-06](firmware/pico2maple-w_2026-02-06.uf2), USB and wireless for Pico 2 W boards.
 
 To install the firmware on the Pico 2:
 
@@ -86,6 +86,16 @@ The easiest method to create a layout is to use the [Pico2Maple Mapper tool](htt
 
 Optionally, for instructions on how to manually load a custom layout from an SD card, please check out the [Controller Layouts docs](docs/controller_layouts.md). Layouts loaded from an SD card will be stored internally so only need to be loaded once.
 
+# Per Game VMUs using GameID
+
+Pico2Maple supports GameIDs, allowing game-specific virtual VMUs to be created and mounted automatically when launching games through the OpenMenu launcher. An SD card, GDEMU, and at least version 1.2 of [OpenMenu](https://github.com/DerekPascarella/openMenu-Virtual-Folder-Bundle) are needed to use gameID.
+
+If an SD card is available, GameID mode can be enabled by incrementing the VMU slot past 10, or decrementing under 1, acting as sort of a separate VMU slot. The OLED will display `GID` when in GameID mode.
+
+While in GameID mode, if a game is launched through OpenMenu, a VMU specific to that particular game will be automatically created (if it does not already exist) and loaded. The last GameID received will be saved and will be immediately re-loaded across power cycles.
+
+GameID VMUs are stored in the `gameid` directory. These are the same as any other VMU files, and game-saves can be viewed or edited using VMU Explorer.
+
 # Required Hardware
 
 ![Hardware needed](resources/images/hardware_components.jpg)
@@ -96,6 +106,35 @@ Optionally, for instructions on how to manually load a custom layout from an SD 
 * Optional:
   * SPI microSD breakout board and FAT32-formatted microSD card for saving VMU data ([example](https://www.amazon.ca/dp/B0CD79YZH6))
   * SSD1306 128x64 OLED display for displaying VMU images and selected VMU bank ([example](https://www.amazon.ca/dp/B0751LFCZT))
+
+# Pin Layout
+
+An alternate pin layout can be enabled by grounding GPIO15.
+
+| RP2350 GPIO | Standard Layout        | Alternate Layout                |
+|-------------|------------------------|---------------------------------|
+| 0           | UART TX                | UART TX                         |
+| 1           | UART RX                | UART RX                         |
+| 2           |                        | CYW43 - gSPI DI/DO/IRQ          |
+| 3           | VMU Buzzer PWM         | CYW43 - gSPI CS                 |
+| 4           | OLED SDA               | OLED SDA                        |
+| 5           | OLED SDL               | OLED SDL                        |
+| 6           |                        | DC Maple 1                      |
+| 7           |                        | DC Maple 2                      |
+| 10          | microSD SPI SCK        | microSD SPI SCK                 |
+| 11          | microSD SPI TX         | microSD SPI TX                  |
+| 12          | microSD SPI RX         | microSD SPI RX                  |
+| 13          | microSD SPI CS         | microSD SPI CS                  |
+| 14          |                        | CYW43 - BT On                   |
+| 15          | Internally pulled high | **Ground to enable alt layout** |
+| 16          | DC Maple 1             |                                 |
+| 17          | DC Maple 2             |                                 |
+| 23          | CYW43 - BT On          |                                 |
+| 24          | CYW43 - gSPI DI/DO/IRQ |                                 |
+| 25          | CYW43 - gSPI CS        |                                 |
+| 26 |                        | VMU Buzzer PWM                  |
+| 29           | CYW43 - gSPI SCLK      |                                 |
+
 
 # Construction
 
@@ -115,7 +154,7 @@ With everything wired up, it's simply a matter of plugging in a USB device to th
 
 *Feedback on this project is very welcome!*
 
-* Alternate pin assignment to accommodate more RP2350 boards
+* Improve GameID features using OLED display - show game name, manual VMU switching, etc.
 * Support a wider range of USB controllers (ongoing).
 
 # Use of Open Source Libraries
