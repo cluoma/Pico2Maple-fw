@@ -111,29 +111,31 @@ GameID VMUs are stored in the `gameid` directory. These are the same as any othe
 
 An alternate pin layout can be enabled by grounding GPIO15.
 
-| RP2350 GPIO | Standard Layout        | Alternate Layout                |
-|-------------|------------------------|---------------------------------|
-| 0           | UART TX                | UART TX                         |
-| 1           | UART RX                | UART RX                         |
-| 2           |                        | CYW43 - gSPI DI/DO/IRQ          |
-| 3           | VMU Buzzer PWM         | CYW43 - gSPI CS                 |
-| 4           | OLED SDA               | OLED SDA                        |
-| 5           | OLED SDL               | OLED SDL                        |
-| 6           |                        | DC Maple 1                      |
-| 7           |                        | DC Maple 2                      |
-| 10          | microSD SPI SCK        | microSD SPI SCK                 |
-| 11          | microSD SPI TX         | microSD SPI TX                  |
-| 12          | microSD SPI RX         | microSD SPI RX                  |
-| 13          | microSD SPI CS         | microSD SPI CS                  |
-| 14          |                        | CYW43 - BT On                   |
-| 15          | Internally pulled high | **Ground to enable alt layout** |
-| 16          | DC Maple 1             |                                 |
-| 17          | DC Maple 2             |                                 |
-| 23          | CYW43 - BT On          |                                 |
-| 24          | CYW43 - gSPI DI/DO/IRQ |                                 |
-| 25          | CYW43 - gSPI CS        |                                 |
-| 26 |                        | VMU Buzzer PWM                  |
-| 29           | CYW43 - gSPI SCLK      |                                 |
+*Please note that pins for the CYW43 (RM2 module) are subject to change.*
+
+| RP2350 GPIO | Standard Layout        | Alternate Layout                      |
+|-------------|------------------------|---------------------------------------|
+| 0           | UART TX                | UART TX                               |
+| 1           | UART RX                | UART RX                               |
+| 2           |                        | CYW43 - gSPI DI/DO/IRQ                |
+| 3           | VMU Buzzer PWM         | CYW43 - gSPI CS                       |
+| 4           | OLED SDA               | OLED SDA                              |
+| 5           | OLED SDL               | OLED SDL                              |
+| 6           |                        | DC Maple 1                            |
+| 7           |                        | DC Maple 2                            |
+| 10          | microSD SPI SCK        | microSD SPI SCK                       |
+| 11          | microSD SPI TX         | microSD SPI TX                        |
+| 12          | microSD SPI RX         | microSD SPI RX                        |
+| 13          | microSD SPI CS         | microSD SPI CS                        |
+| 14          |                        | CYW43 - BT On                         |
+| 15          | Internally pulled high | **Ground to enable alt layout**       |
+| 16          | DC Maple 1             |                                       |
+| 17          | DC Maple 2             |                                       |
+| 23          | CYW43 - BT On          |                                       |
+| 24          | CYW43 - gSPI DI/DO/IRQ |                                       |
+| 25          | CYW43 - gSPI CS        |                                       |
+| 26          |                        | VMU Buzzer PWM                        |
+| 29          | CYW43 - gSPI SCLK      | CYW43 - gSPI SCLK |
 
 
 # Construction
