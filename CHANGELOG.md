@@ -1,5 +1,14 @@
 # Pico2Maple Changelog
 
+## 2026-03-06
+
+* Added/confirmed support for a huge number of new devices. A big thank you to KetsubanSolo and tango_durango for their help testing so many new devices. 
+* Improved BT reconnection behavior by properly storing BT keys. Reconnecting devices should be faster, and some devices that always had to be re-paired should now reconnect as expected.
+* Logitech Lightspeed USB dongles for g305 and g502 mice should now be detected properly
+* Fix a bug in rumble for PS4/5 controllers connected via USB causing dropped rumble events
+* Notification system: launching games while GameID is active will show the title of the game across the top of the oled for a period.
+  * This is an experimental feature with other possible uses. Feedback is appreciated.
+
 ## 2026-02-05
 
 * GameID is now a supported feature. Many thanks to Derek (aka ateam) for including Pico2Maple as a supported GameID device in OpenMenu

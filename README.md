@@ -16,8 +16,8 @@ Feel free to hop into the [Discord server](https://discord.gg/MpFB7j389x) to dis
 
 Download the latest firmware:
 
-* [pico2maple_2026-02-06](firmware/pico2maple_2026-02-06.uf2), USB only for Pico 2 and W boards.
-* [pico2maple-w_2026-02-06](firmware/pico2maple-w_2026-02-06.uf2), USB and wireless for Pico 2 W boards.
+* [pico2maple_2026-03-06](firmware/pico2maple_2026-03-06.uf2), USB only for Pico 2 and W boards.
+* [pico2maple-w_2026-03-06](firmware/pico2maple-w_2026-03-06.uf2), USB and wireless for Pico 2 W boards.
 
 To install the firmware on the Pico 2:
 
