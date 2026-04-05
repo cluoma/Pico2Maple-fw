@@ -1,5 +1,10 @@
 # Pico2Maple Changelog
 
+## 2026-04-05
+
+* Update TinyUSB library to 0.20.0. Improves USB stability for hotswapping and supports more devices.
+* Added support for RP2040 chips. UF2 firmwares are universal for RP2040 and RP2350.
+
 ## 2026-03-06
 
 * Added/confirmed support for a huge number of new devices. A big thank you to KetsubanSolo and tango_durango for their help testing so many new devices. 

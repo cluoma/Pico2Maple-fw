@@ -4,7 +4,7 @@
 | :-------------------------: | :-------------------------: |
 | ![Pico2Maple three dongles](resources/images/pico2maple_dongles.jpg)  |  ![Powered on](resources/images/wooden_box_powered_on.jpg) |
 
-Pico2Maple is a Dreamcast Maple bus emulator for the RP2350. The goal of this project of to provide a way to for people to use a variety of non-Dreamcast controllers and accessories on the Sega Dreamcast. Currently, it is possible to use several USB controllers, dongles, mice, and keyboards.
+Pico2Maple is a Dreamcast Maple bus emulator for the RP2350/RP2040. The goal of this project of to provide a way to for people to use a variety of non-Dreamcast controllers and accessories on the Sega Dreamcast. Currently, it is possible to use several USB controllers, dongles, mice, and keyboards.
 
 Pico2Maple also integrates VMU support with the ability to save to a microSD card. GameID is also supported with GDEMU and OpenMenu v1.2+ providing automatic switching to game-specific VMUs.
 
@@ -16,10 +16,10 @@ Feel free to hop into the [Discord server](https://discord.gg/MpFB7j389x) to dis
 
 Download the latest firmware:
 
-* [pico2maple_2026-03-06](firmware/pico2maple_2026-03-06.uf2), USB only for Pico 2 and W boards.
-* [pico2maple-w_2026-03-06](firmware/pico2maple-w_2026-03-06.uf2), USB and wireless for Pico 2 W boards.
+* [pico2maple_2026-04-05](firmware/pico2maple_2026-04-05.uf2), USB only for Pico1/2 and Pico1/2-W boards (universal RP2040/RP2350 UF2).
+* [pico2maple-w_2026-04-05](firmware/pico2maple-w_2026-04-05.uf2), USB and wireless for Pico1/2-W boards (universal RP2040/RP2350 UF2).
 
-To install the firmware on the Pico 2:
+To install the firmware on the Pico:
 
 * Hold down the BOOTSEL button while connecting the Pico to a PC. This should make it appear as a USB storage device.
 * Copy the pico2maple uf2 file to the Pico. It should reboot itself with the new firmware.
@@ -100,7 +100,7 @@ GameID VMUs are stored in the `gameid` directory. These are the same as any othe
 
 ![Hardware needed](resources/images/hardware_components.jpg)
 
-* Raspberry Pi Pico 2
+* Raspberry Pi Pico 1/2 (W)
 * Dreamcast controller cable or plug
 * Micro-USB to female USB-A adapter
 * Optional:
@@ -113,29 +113,29 @@ An alternate pin layout can be enabled by grounding GPIO15.
 
 *Please note that pins for the CYW43 (RM2 module) are subject to change.*
 
-| RP2350 GPIO | Standard Layout        | Alternate Layout                      |
-|-------------|------------------------|---------------------------------------|
-| 0           | UART TX                | UART TX                               |
-| 1           | UART RX                | UART RX                               |
-| 2           |                        | CYW43 - gSPI DI/DO/IRQ                |
-| 3           | VMU Buzzer PWM         | CYW43 - gSPI CS                       |
-| 4           | OLED SDA               | OLED SDA                              |
-| 5           | OLED SDL               | OLED SDL                              |
-| 6           |                        | DC Maple 1                            |
-| 7           |                        | DC Maple 2                            |
-| 10          | microSD SPI SCK        | microSD SPI SCK                       |
-| 11          | microSD SPI TX         | microSD SPI TX                        |
-| 12          | microSD SPI RX         | microSD SPI RX                        |
-| 13          | microSD SPI CS         | microSD SPI CS                        |
-| 14          |                        | CYW43 - BT On                         |
-| 15          | Internally pulled high | **Ground to enable alt layout**       |
-| 16          | DC Maple 1             |                                       |
-| 17          | DC Maple 2             |                                       |
-| 23          | CYW43 - BT On          |                                       |
-| 24          | CYW43 - gSPI DI/DO/IRQ |                                       |
-| 25          | CYW43 - gSPI CS        |                                       |
-| 26          |                        | VMU Buzzer PWM                        |
-| 29          | CYW43 - gSPI SCLK      | CYW43 - gSPI SCLK |
+| RP2040/2350 GPIO | Standard Layout        | Alternate Layout                      |
+|------------------|------------------------|---------------------------------------|
+| 0                | UART TX                | UART TX                               |
+| 1                | UART RX                | UART RX                               |
+| 2                |                        | CYW43 - gSPI DI/DO/IRQ                |
+| 3                | VMU Buzzer PWM         | CYW43 - gSPI CS                       |
+| 4                | OLED SDA               | OLED SDA                              |
+| 5                | OLED SDL               | OLED SDL                              |
+| 6                |                        | DC Maple 1                            |
+| 7                |                        | DC Maple 2                            |
+| 10               | microSD SPI SCK        | microSD SPI SCK                       |
+| 11               | microSD SPI TX         | microSD SPI TX                        |
+| 12               | microSD SPI RX         | microSD SPI RX                        |
+| 13               | microSD SPI CS         | microSD SPI CS                        |
+| 14               |                        | CYW43 - BT On                         |
+| 15               | Internally pulled high | **Ground to enable alt layout**       |
+| 16               | DC Maple 1             |                                       |
+| 17               | DC Maple 2             |                                       |
+| 23               | CYW43 - BT On          |                                       |
+| 24               | CYW43 - gSPI DI/DO/IRQ |                                       |
+| 25               | CYW43 - gSPI CS        |                                       |
+| 26               |                        | VMU Buzzer PWM                        |
+| 29               | CYW43 - gSPI SCLK      | CYW43 - gSPI SCLK |
 
 
 # Construction
@@ -148,7 +148,7 @@ Connect the controller wires to the labelled pins on the Pico below by soldering
 
 ![Pinout on the Pico 2](resources/images/pico2maple_pinout.jpg)
 
-*Optionally* connect the SPI micro-SD board and the SSD1306 OLED screen to the labelled pins on the Pico 2.
+*Optionally* connect the SPI micro-SD board and the SSD1306 OLED screen to the labelled pins on the Pico.
 
 With everything wired up, it's simply a matter of plugging in a USB device to the Pico 2 using the USB-A to Mini-USB adapter and plugging the Dreamcast controller cable into the console.
 
