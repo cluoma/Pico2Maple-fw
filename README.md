@@ -10,7 +10,7 @@ Pico2Maple also integrates VMU support with the ability to save to a microSD car
 
 Rumble emulation is available for PS4, PS5, and Xbox controllers connected via USB or BT.
 
-Feel free to hop into the [Discord server](https://discord.gg/MpFB7j389x) to discuss the project, ask questions, or share your own projects using Pico2Maple.
+**This software is provided, as is and without warranty, in the hopes that it is useful to some. This project is not affiliated with any hardware makers or devices.**
 
 # Download
 
