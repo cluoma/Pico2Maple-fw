@@ -1,5 +1,9 @@
 # Pico2Maple Changelog
 
+## 2026-05-16
+
+* Basic support for Steam Controller 2026 via direct USB, the 'puck', and Bluetooth
+
 ## 2026-04-05
 
 * Update TinyUSB library to 0.20.0. Improves USB stability for hotswapping and supports more devices.

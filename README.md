@@ -31,6 +31,7 @@ For a more detailed breakdown of supported devices, please check out the [full d
 ## USB
 
 * Steam Controller (wireless with dongle only)
+* Steam Controller 2026
 * Sony PlayStation DS 3/4/5 Controllers
 * Nintendo Switch Pro Controller
 * XInput Controllers (OG Xbox, Xbox 360, One, Series, etc.)
@@ -47,6 +48,7 @@ Pico2Maple uses Bluepad32 to handle BT connectivity. Check out [Bluepad32 suppor
 
 The following controllers have been tested and confirmed working:
 
+* Steam Controller 2026
 * Sony PlayStation DS 4/5 Controllers
 * Xbox Series Wireless Controller (3-button version)
 * Nintendo WiiU and Switch Pro Controllers
@@ -60,6 +62,7 @@ By default, Pico2Maple boots into discoverable and pairing mode when no device i
 
 Different controllers have different methods to start a sync/pairing action.
 
+* Steam Controller 2026: press and hold B + R1 + Steam buttons until blue led blinks quickly
 * PlayStation DS 4/5 Controllers: press and hold the PlayStation and Share buttons simultaneously until the lightbar blinks quickly.
 * Xbox Series Wireless Controller: press and hold the small sync button on the front of the controller until the Xbox light blinks quickly.
 * Nintendo WiiU Pro Controller: press the red sync button on the back of the controller.
