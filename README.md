@@ -16,8 +16,8 @@ Rumble emulation is available for PS4, PS5, and Xbox controllers connected via U
 
 Download the latest firmware:
 
-* [pico2maple_2026-04-05](firmware/pico2maple_2026-04-05.uf2), USB only for Pico1/2 and Pico1/2-W boards (universal RP2040/RP2350 UF2).
-* [pico2maple-w_2026-04-05](firmware/pico2maple-w_2026-04-05.uf2), USB and wireless for Pico1/2-W boards (universal RP2040/RP2350 UF2).
+* [pico2maple_2026-05-16](firmware/pico2maple_2026-05-16.uf2), USB only for Pico1/2 and Pico1/2-W boards (universal RP2040/RP2350 UF2).
+* [pico2maple-w_2026-05-16](firmware/pico2maple-w_2026-05-16.uf2), USB and wireless for Pico1/2-W boards (universal RP2040/RP2350 UF2).
 
 To install the firmware on the Pico:
 
