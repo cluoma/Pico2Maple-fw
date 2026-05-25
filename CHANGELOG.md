@@ -1,5 +1,10 @@
 # Pico2Maple Changelog
 
+## 2026-05-24
+
+* Fixed regression in the way Maple rumble commands are handled
+* Improved Steam Controller 2026 support for USB, experimental rumble added
+
 ## 2026-05-16
 
 * Basic support for Steam Controller 2026 via direct USB, the 'puck', and Bluetooth
