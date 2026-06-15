@@ -1,5 +1,13 @@
 # Pico2Maple Changelog
 
+## 2026-06-14
+
+* Added an 'unknown USB controller' path for USB devices with unknown vid/pid but report themselves as a gamepad in their HID report descriptor. This uses a predefined layout for buttons and axes.
+  * Buttons (starting at b0): X, A, B, Y, LB, RB, LT, RT, SELECT, START, L3, R3
+  * Axes (in order of reporting): X, Y, Right-X, Right-Y, Left Trigger, Right Trigger
+* Added basic rumble support for the New Steam Controller over USB/BT.
+* Tested and confirmed [Pulsar Dreamcast BLE](https://github.com/alwaysEpic/pulsar-dreamcast-ble) support (0.2.8 tested)
+
 ## 2026-05-24
 
 * Fixed regression in the way Maple rumble commands are handled

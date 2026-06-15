@@ -8,7 +8,7 @@ Pico2Maple is a Dreamcast Maple bus emulator for the RP2350/RP2040. The goal of 
 
 Pico2Maple also integrates VMU support with the ability to save to a microSD card. GameID is also supported with GDEMU and OpenMenu v1.2+ providing automatic switching to game-specific VMUs.
 
-Rumble emulation is available for PS4, PS5, and Xbox controllers connected via USB or BT.
+Rumble emulation is available for PS4, PS5, Xbox controllers, and the new Steam Controller connected via USB or BT.
 
 **This software is provided, as is and without warranty, in the hopes that it is useful to some. This project is not affiliated with any hardware makers or devices.**
 
@@ -16,8 +16,8 @@ Rumble emulation is available for PS4, PS5, and Xbox controllers connected via U
 
 Download the latest firmware:
 
-* [pico2maple_2026-05-24](firmware/pico2maple_2026-05-24.uf2), USB only for Pico1/2 and Pico1/2-W boards (universal RP2040/RP2350 UF2).
-* [pico2maple-w_2026-05-24](firmware/pico2maple-w_2026-05-24.uf2), USB and wireless for Pico1/2-W boards (universal RP2040/RP2350 UF2).
+* [pico2maple_2026-06-14](firmware/pico2maple_2026-06-14.uf2), USB only for Pico1/2 and Pico1/2-W boards (universal RP2040/RP2350 UF2).
+* [pico2maple-w_2026-06-14](firmware/pico2maple-w_2026-06-14.uf2), USB and wireless for Pico1/2-W boards (universal RP2040/RP2350 UF2).
 
 To install the firmware on the Pico:
 
@@ -44,7 +44,7 @@ Many generic gamepads are also supported. Please create an issue if your USB gam
 
 ## BT
 
-Pico2Maple uses Bluepad32 to handle BT connectivity. Check out [Bluepad32 supported controller list](https://bluepad32.readthedocs.io/en/latest/supported_gamepads/) for a summary of supported devices.
+Pico2Maple uses a fork Bluepad32 to handle BT connectivity with support added for additional controllers.
 
 The following controllers have been tested and confirmed working:
 
@@ -54,7 +54,13 @@ The following controllers have been tested and confirmed working:
 * Nintendo WiiU and Switch Pro Controllers
 * 8BitDo SN30 Pro
 * 8BitDo SN30 Pro Xbox Edition
+
+### Wireless OEM Dreamcast Controller Mods
+
+The following wireless Dreamcast controller projects are supported on Pico2Maple. Turn a standard Dreamcast controller into a Bluetooth wireless gamepad to use on the Dreamcast!
+
 * [Dreamwave Controller](https://github.com/cluoma/dreamwave)
+* [Pulsar Dreamcast BLE](https://github.com/alwaysEpic/pulsar-dreamcast-ble)
 
 ### BT Pairing
 
