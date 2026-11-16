@@ -6,7 +6,7 @@
 
 Pico2Maple is a Dreamcast Maple bus emulator for the RP2350/RP2040. The goal of this project of to provide a way to for people to use a variety of non-Dreamcast controllers and accessories on the Sega Dreamcast. Currently, it is possible to use several USB controllers, dongles, mice, and keyboards.
 
-Pico2Maple also integrates VMU support with the ability to save to a microSD card. GameID is also supported with GDEMU and OpenMenu v1.2+ providing automatic switching to game-specific VMUs.
+Pico2Maple also integrates VMU support with the ability to save to a microSD card. GameID is also supported with GDEMU and OpenMenu v1.2+ providing automatic switching to game-specific VMUs. A VMU Menu allows easy switching to any existing GameID VMU on-demand (OLED required).
 
 Rumble emulation is available for PS4, PS5, Xbox controllers, and the new Steam Controller connected via USB or BT.
 
@@ -16,8 +16,8 @@ Rumble emulation is available for PS4, PS5, Xbox controllers, and the new Steam 
 
 Download the latest firmware:
 
-* [pico2maple_2026-06-14](firmware/pico2maple_2026-06-14.uf2), USB only for Pico1/2 and Pico1/2-W boards (universal RP2040/RP2350 UF2).
-* [pico2maple-w_2026-06-14](firmware/pico2maple-w_2026-06-14.uf2), USB and wireless for Pico1/2-W boards (universal RP2040/RP2350 UF2).
+* [pico2maple_2026-11-15](firmware/pico2maple_2026-11-15.uf2), USB only for Pico1/2 and Pico1/2-W boards (universal RP2040/RP2350 UF2).
+* [pico2maple-w_2026-11-15](firmware/pico2maple-w_2026-11-15.uf2), USB and wireless for Pico1/2-W boards (universal RP2040/RP2350 UF2).
 
 To install the firmware on the Pico:
 
@@ -57,7 +57,7 @@ The following controllers have been tested and confirmed working:
 
 ### Wireless OEM Dreamcast Controller Mods
 
-The following wireless Dreamcast controller projects are supported on Pico2Maple. Turn a standard Dreamcast controller into a Bluetooth wireless gamepad to use on the Dreamcast!
+The following wireless Dreamcast controller projects have basic support (controller input only) on Pico2Maple. Turn a standard Dreamcast controller into a Bluetooth wireless gamepad to use on the Dreamcast!
 
 * [Dreamwave Controller](https://github.com/cluoma/dreamwave)
 * [Pulsar Dreamcast BLE](https://github.com/alwaysEpic/pulsar-dreamcast-ble)
@@ -78,7 +78,11 @@ Different controllers have different methods to start a sync/pairing action.
 
 Controls are mapped as you would expect with a few extra features:
 
-* **Select + Right Bumper/Left Bumper** switch currently-active VMU bank (cycles through 10 different VMU banks).
+* **Select + Right Bumper/Left Bumper** switch currently-active VMU bank (cycles through 10 different VMU banks + GameID).
+* **Select + Right Bumper + Left Bumper** enter VMU menu to switch to an unlimited number of virtual VMUs.
+
+***
+
 * **Select + A** enable standard Dreamcast controller layout.
 * **Select + B** enable all controller inputs which activates the second joystick and the C,Z buttons. Z is mapped to left bumper and C to right bumper. Not all games will accept this layout. 
 * **Select + X** enable Twin Stick layout. Uses both controller joysticks, bumpers and triggers.
@@ -99,9 +103,11 @@ Optionally, for instructions on how to manually load a custom layout from an SD 
 
 Pico2Maple supports GameIDs, allowing game-specific virtual VMUs to be created and mounted automatically when launching games through the OpenMenu launcher. An SD card, GDEMU, and at least version 1.2 of [OpenMenu](https://github.com/DerekPascarella/openMenu-Virtual-Folder-Bundle) are needed to use gameID.
 
-If an SD card is available, GameID mode can be enabled by incrementing the VMU slot past 10, or decrementing under 1, acting as sort of a separate VMU slot. The OLED will display `GID` when in GameID mode.
+If an SD card is available, GameID mode can be enabled by incrementing the VMU slot past 10, or decrementing under 1, acting as sort of a separate VMU slot. The OLED will display `G-X` when in GameID mode.
 
-While in GameID mode, if a game is launched through OpenMenu, a VMU specific to that particular game will be automatically created (if it does not already exist) and loaded. The last GameID received will be saved and will be immediately re-loaded across power cycles.
+If an OLED screen is available, a VMU Menu is accessible using **Select + LB + RB** to quickly switch between any existing GameID VMUs, and create additional per-game VMUs.
+
+While in GameID mode, if a game is launched through OpenMenu, a VMU specific to that particular game will be automatically created (if it does not already exist) and loaded. The last GameID loaded will be saved immediately re-loaded across power cycles.
 
 GameID VMUs are stored in the `gameid` directory. These are the same as any other VMU files, and game-saves can be viewed or edited using VMU Explorer.
 
@@ -165,7 +171,6 @@ With everything wired up, it's simply a matter of plugging in a USB device to th
 
 *Feedback on this project is very welcome!*
 
-* Improve GameID features using OLED display - show game name, manual VMU switching, etc.
 * Support a wider range of USB controllers (ongoing).
 
 # Use of Open Source Libraries

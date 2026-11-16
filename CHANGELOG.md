@@ -1,5 +1,14 @@
 # Pico2Maple Changelog
 
+## 2026-11-15
+
+* Added a VMU Menu (OLED required). Switch to any existing VMU on the device or create new VMUs for existing GameIDs.
+  * Accessible using **Select + LB + RB**
+* Add support for BT mice.
+* Improved BT reconnection behaviour for non-gamepad device.
+* Added VMU screen mirroring for Dreamwave controller.
+* Update pico-sdk and btstack
+
 ## 2026-06-14
 
 * Added an 'unknown USB controller' path for USB devices with unknown vid/pid but report themselves as a gamepad in their HID report descriptor. This uses a predefined layout for buttons and axes.
